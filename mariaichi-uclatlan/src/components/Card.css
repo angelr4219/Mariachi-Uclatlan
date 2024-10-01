@@ -1,0 +1,51 @@
+
+.container {
+  width: 350px;
+  height: 500px;
+  perspective: 800px;
+}
+
+.card {
+  height: 75%;
+  width: 100%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+  display: flex;
+  padding-top: 130px;
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front.Carlos {
+  background-image: url("https://github.com/angelr4219/Mariachi-Uclatlan/blob/main/mariaichi-uclatlan/public/Images/Carlitos.jpeg");
+}
+.front.bobby {
+  background-image: url("https://github.com/angelr4219/Mariachi-Uclatlan/blob/main/mariaichi-uclatlan/public/Images/Carlitos.jpeg");
+}
+.front.Sylvia {
+  background-image: url("https://github.com/angelr4219/Mariachi-Uclatlan/blob/main/mariaichi-uclatlan/public/Images/Carlitos.jpeg");
+}
+.front.Aviv {
+  background-image: url("https://github.com/angelr4219/Mariachi-Uclatlan/blob/main/mariaichi-uclatlan/public/Images/Carlitos.jpeg");
+}
+
+.back {
+  background-color: #3a3a3a;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Add the rest of your styling here */

@@ -1,19 +1,34 @@
 import React from 'react';
-import './App.css'; // Global CSS
-import Navbar from './components/Navbar';
-import Card from './components/Card';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+import Members from './Pages/Members';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <div className="card-grid">
-        <Card imageClass="Carlos" name="Carlos Oliva" role="Student Director" description="Some description about Carlos." />
-        <Card imageClass="bobby" name="Bobby" role="Member" description="Some description about Bobby." />
-        <Card imageClass="Sylvia" name="Sylvia" role="Member" description="Some description about Sylvia." />
-        <Card imageClass="Aviv" name="Aviv" role="Member" description="Some description about Aviv." />
+    
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li><Link to="/Home">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/members">Members</Link></li>
+          </ul>
+        </nav>
+        
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/members" element={<Members />} />
+        </Routes>
       </div>
-    </div>
+    </Router>
   );
 }
 

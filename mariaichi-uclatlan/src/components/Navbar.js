@@ -10,7 +10,7 @@ const Navbar = () => {
         <a href="members.html">Our Class</a>
         <a href="#">Our Instructor</a>
       </div>
-      <img className="logo" src="/PicUclatlan/UclatlanB.png" alt="Logo" />
+      <img className="logo" src="https://github.com/angelr4219/Mariachi-Uclatlan/blob/main/mariaichi-uclatlan/public/Images/UclatlanB.png" alt="Logo" />
       <a href="about.html">Members</a>
       <div className="drop-down">
         <a href="Contact.html">Contact</a>
