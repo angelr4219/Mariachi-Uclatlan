@@ -1,2 +1,2 @@
 # Mariachi-Uclatlan
-MAde as personal project for mariachi de uclatlan
+Made as personal project for mariachi de uclatlan
