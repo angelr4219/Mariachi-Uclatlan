@@ -14,7 +14,13 @@
   display: flex;
   padding-top: 130px;
 }
-
+.card:hover {
+  transform: rotateY(180deg);
+}
+.front {
+  background-size: cover;
+  background-position: center;
+}
 .front,
 .back {
   height: 100%;
@@ -26,7 +32,7 @@
 }
 
 .front.Carlos {
-  background-image: url("https://github.com/angelr4219/Mariachi-Uclatlan/blob/main/mariaichi-uclatlan/public/Images/Carlitos.jpeg");
+  background-image: url("");
 }
 .front.bobby {
   background-image: url("https://github.com/angelr4219/Mariachi-Uclatlan/blob/main/mariaichi-uclatlan/public/Images/Carlitos.jpeg");
