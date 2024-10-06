@@ -4,7 +4,8 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Members from './Pages/Members';
-
+import Login from './components/Login';
+import MembersOnly from './Pages/MembersOnly';
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/members" element={<Members />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/members-only" element={<MembersOnly />} />
         </Routes>
       </div>
     </Router>
