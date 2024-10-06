@@ -1,0 +1,40 @@
+/* src/Pages/Login.css */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .input-field {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 300px; /* Adjust width as needed */
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #039be5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0277bd;
+  }
+  
+  .register-link {
+    margin-top: 15px;
+  }
+  
+  .register-link a {
+    color: #039be5;
+    text-decoration: underline;
+  }
+  
+  .register-link a:hover {
+    text-decoration: none;
+  }
+  

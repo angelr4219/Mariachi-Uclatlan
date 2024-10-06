@@ -2,6 +2,7 @@
 import React from 'react';
 import { auth } from '../FireBaseConfig';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import Navbar from '../components/Navbar';
 
 function MembersOnly() {
   const [user, loading, error] = useAuthState(auth);
@@ -20,6 +21,7 @@ function MembersOnly() {
 
   return (
     <div>
+        <Navbar />
       <h2>Members Only Section</h2>
       <p>Welcome, {user.email}!</p>
       {/* Add member-specific content here */}
