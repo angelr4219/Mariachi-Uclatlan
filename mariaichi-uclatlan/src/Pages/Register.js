@@ -25,7 +25,7 @@ const Register = () => {
 
     try {
       // Firebase logic to create a new user
-      await createUserWithEmailAndPassword(auth, email, password);
+      await createUserWithEmailAndPassword(auth, email, password,name ,phoneNumber,schoolYear,dob,major,section);
       setSuccessMessage('Registration successful! You can now log in.');
       setEmail('');
       setPassword('');
