@@ -1,10 +1,21 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+// src/main.jsx
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
+
+// Creating the root node for rendering the React application
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Rendering the App component wrapped in React.StrictMode
+root.render(
+  <React.StrictMode>
     <App />
-  </StrictMode>,
-)
+  </React.StrictMode>
+);
+
+// Optionally, you can remove this if you don't need it
+// If you want to measure performance in your app, log results or send to an analytics endpoint
+// reportWebVitals(console.log);
+// reportWebVitals();  // Comment out or remove if you're not using it

@@ -1,42 +1,96 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* App.css */
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  font-family: 'Roboto', sans-serif; /* Use a modern sans-serif font */
+  background-color: #f4f4f4; /* Light background color */
+  color: #333; /* Default text color */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Main application layout */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Header styles */
+header {
+  background-color: #2774AE; /* UCLA Blue */
+  padding: 10px 20px; /* Top/bottom and left/right padding */
+  color: #fff; /* White text */
+  text-align: center; /* Center text */
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Center items vertically */
+  padding: 10px 20px;
+  background-color: #2774AE; /* UCLA Blue */
+}
+
+.navbar a {
+  color: white; /* White text for links */
+  text-decoration: none; /* Remove underline from links */
+  margin: 0 10px; /* Space between links */
+}
+
+.navbar a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Main content area */
+.main-content {
+  flex: 1; /* Allow this area to grow and fill available space */
+  padding: 20px; /* Add some padding */
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px; /* Padding inside buttons */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #039be5; /* Blue background */
+  color: white; /* White text */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+  background-color: #0277bd; /* Darker blue on hover */
+}
+
+/* Input field styles */
+input, select {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside inputs */
+  margin: 10px 0; /* Space between inputs */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Error message styles */
+.error-message {
+  color: red; /* Red text for error messages */
+  text-align: center; /* Center error messages */
+}
+
+/* Success message styles */
+.success-message {
+  color: green; /* Green text for success messages */
+  text-align: center; /* Center success messages */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column; /* Stack navbar items on small screens */
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
