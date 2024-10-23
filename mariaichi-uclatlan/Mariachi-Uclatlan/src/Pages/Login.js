@@ -6,6 +6,9 @@ import { useHistory } from 'react-router-dom'; // Import useHistory for navigati
 import './Login.css';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 
+import UclaNavbar from '../components/UclaNavbar';
+
+
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -29,33 +32,33 @@ function Login() {
   };
 
   return (
-    <div className="login-container">
-      <Navbar />
-      <h2>Login</h2>
-      <form onSubmit={handleLogin}>
-        <input 
-          type="email" 
-          value={email} 
-          onChange={(e) => setEmail(e.target.value)} 
-          placeholder="Email" 
-          required 
-          className="input-field"
-        />
-        <input 
-          type="password" 
-          value={password} 
-          onChange={(e) => setPassword(e.target.value)} 
-          placeholder="Password" 
-          required 
-          className="input-field"
-        />
-        <button type="submit" className="submit-button">Login</button>
-      </form>
-      {error && <p className="error-message">{error}</p>}
+    <div>
+      <UclaNavbar />
+    <div className="background">
       
-      <div className="register-link">
-        <p>Don't have an account? <a href="/register">Create a new profile</a></p>
-      </div>
+      <div className="shape"></div>
+      <div className="shape"></div>
+      
+      <form>
+        <h3>Login Here</h3>
+
+        <label htmlFor="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username" />
+
+        <label htmlFor="password">Password</label>
+        <input type="password" placeholder="Password" id="password" />
+
+        <button type="button">Log In</button>
+        <div className="social">
+          <div className="go">
+            <i className="fab fa-google"></i> Google
+          </div>
+          <div className="fb">
+            <i className="fab fa-facebook"></i> Facebook
+          </div>
+        </div>
+      </form>
+    </div>
     </div>
   );
 }

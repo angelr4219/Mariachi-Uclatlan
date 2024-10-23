@@ -1,6 +1,6 @@
 // src/components/MembersOnly.js
 import React from 'react';
-import { auth } from '../FireBaseConfig';
+import { auth } from '../firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import Navbar from '../components/Navbar';
 import './MembersOnly.css'; // Styling for the page and sidebar

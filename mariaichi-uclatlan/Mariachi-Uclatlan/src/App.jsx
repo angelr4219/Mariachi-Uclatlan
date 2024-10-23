@@ -7,15 +7,13 @@ import Members from './Pages/Members';
 import Login from './Pages/Login';
 import MembersOnly from './Pages/MembersOnly';
 import Register from './Pages/Register';
-
+import './App.css'
 
 function App() {
   return (
-    
     <Router>
-      <div>
-        
-        
+      <div className="app">
+        <Navbar />
         <Routes>
           
           <Route path="/" element={<Home />} />
@@ -31,5 +29,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;

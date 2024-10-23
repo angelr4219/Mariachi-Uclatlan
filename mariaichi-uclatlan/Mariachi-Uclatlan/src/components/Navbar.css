@@ -1,0 +1,66 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center;
+  background-color: #2774AE; /* UCLA Blue */
+  padding: 10px 0; /* Padding to give height to the navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fix the navbar to the top of the page */
+  top: 0; /* Position it at the very top */
+  left: 0; /* Align it with the left edge */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it stays above other elements */
+  
+}
+
+.navbar-brand h1 {
+  color: #FFD100; /* UCLA Gold */
+  margin: 0;
+  font-size: 24px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 15px; /* Space between links */
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #FFFFFF; /* White */
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+
+}
+
+/* Interactive States */
+.navbar-links li a:hover {
+  background-color: #FFD100; /* Hover State: UCLA Gold */
+  color: #003B5C; /* Darkest Blue */
+}
+
+.navbar-links li a:active {
+  background-color: #FFC72C; /* Darker Gold */
+  color: #FFFFFF; /* White */
+}
+
+.navbar-links li a:focus {
+  outline: 2px solid #00568C; /* Focus State */
+  outline-offset: 2px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Space brand and links */
+  width: 100%;
+  max-width: 1200px; /* Set a max width for larger screens */
+}
+
+/* Make sure the links are vertically centered */
+.navbar-links {
+  align-items: center; /* Center the links vertically */
+}
+
